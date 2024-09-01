@@ -33,6 +33,7 @@ export default function Login() {
         setUserLogin(localStorage.setItem("userToken", ref?.data.token));
         setIsloading(false);
         navigate("/");
+        location.reload();
       })
       .catch((err) => {
         console.log(err);
@@ -126,11 +127,11 @@ export default function Login() {
               <i className="fa-solid fa-spinner fa-spin"></i>
             </Button>
           ) : (
-            <div className="d-flex align-items-center justify-content-between">
+            <div className="d-flex align-items-center justify-content-between flex-wrap">
               <Button variant="primary" type="submit">
                 Submit
               </Button>{" "}
-              <p className="mb-0 fw-semibold">
+              <p className="mb-0 fw-semibold mt-3 mt-sm-0">
                 Haven't An Account
                 <Link to="/register" className="t-main fw-bold mx-2">
                   Register Now

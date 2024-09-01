@@ -48,12 +48,12 @@ function NavBar() {
               >
                 Categories
               </NavLink>
-              {/* <NavLink
+              <NavLink
                 to="/wishlist"
                 className=" text-decoration-none t-black fs-5 m-2"
               >
                 Wish List
-              </NavLink> */}
+              </NavLink>
               <NavLink
                 to="/brands"
                 className=" text-decoration-none t-black fs-5 m-2"

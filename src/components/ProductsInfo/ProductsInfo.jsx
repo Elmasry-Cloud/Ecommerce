@@ -87,7 +87,7 @@ export default function ProductsInfo() {
 
     if (data?.data?.status == "success") {
       toast.success(data?.data?.message);
-      // setWishListSuccess(data?.data?.status);
+      setWishListSuccess(data?.data?.status);
     } else {
       toast.error(data?.response?.data?.message);
     }

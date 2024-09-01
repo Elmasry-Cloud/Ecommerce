@@ -192,11 +192,11 @@ export default function Register() {
             <i className="fa-solid fa-spinner fa-spin"></i>
           </Button>
         ) : (
-          <div className="d-flex align-items-center justify-content-between">
+          <div className="d-flex align-items-center justify-content-between flex-wrap">
             <Button variant="primary" type="submit">
               Submit
             </Button>
-            <p className="mb-0 fw-semibold">
+            <p className="mb-0 fw-semibold mt-3 mt-sm-0">
               Have An Account
               <Link to="/login" className="t-main fw-bold mx-2">
                 Login Now
