@@ -19,7 +19,7 @@ import CartContextProvider from "../Context/CartContext.jsx";
 import WishListContextProvider from "../Context/WishListContext.jsx";
 import Checkout from "./components/Checkout/Checkout.jsx";
 import Allorders from "./components/Allorders/Allorders.jsx";
-import Wishlist from "./components/WishList/WishList.jsx";
+// import Wishlist from "./components/WishList/WishList.jsx";
 
 let router = createBrowserRouter([
   {
@@ -58,14 +58,14 @@ let router = createBrowserRouter([
           </ProtectedAuth>
         ),
       },
-      {
-        path: "wishlist",
-        element: (
-          <ProtectedAuth>
-            <Wishlist />
-          </ProtectedAuth>
-        ),
-      },
+      // {
+      //   path: "wishlist",
+      //   element: (
+      //     <ProtectedAuth>
+      //       <Wishlist />
+      //     </ProtectedAuth>
+      //   ),
+      // },
       {
         path: "brands",
         element: (
